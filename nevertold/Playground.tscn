@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://mwlr1ch6bhm8"]
+
+[ext_resource type="Script" path="res://world.gd" id="1_djb15"]
+[ext_resource type="PackedScene" uid="uid://crv3dxsdba2or" path="res://Player/player.tscn" id="2_xujar"]
+
+[node name="Playground" type="Node2D"]
+script = ExtResource("1_djb15")
+
+[node name="Player" parent="." instance=ExtResource("2_xujar")]
+position = Vector2(224, 159)
+
+[node name="Parallax2D" type="Parallax2D" parent="."]
